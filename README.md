@@ -273,6 +273,15 @@ How would you troubleshoot a failed Jenkins pipeline?
 
 For conceptual DevOps questions, Gemini answers directly. For supported diagnostics, Gemini can invoke a read-only tool and the UI displays the tool activity and result.
 
+==========
+importand commands
+
+icacls .\devops.pem /grant:r "$($env:USERNAME):(R)" ---key pair permissions
+ssh -i .\devops.pem -L 8000:localhost:8000 ubuntu@77.113.38.166===ssh
+
+
+
+
 ## Documentation
 
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — application and runtime architecture
